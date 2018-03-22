@@ -1,5 +1,5 @@
 # imgpreprocessing
-resize img with padding
+resize img with padding into 256*256 jpg
 # requirement
 * cv2
 * jupyter notebook
