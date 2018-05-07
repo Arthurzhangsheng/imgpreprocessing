@@ -28,3 +28,5 @@ read_dir = 'C:/Users/Administrator/Desktop/fashion_deisgn/82_items_(04-28-18)/no
 save_dir = 'C:/Users/Administrator/Desktop/fashion_deisgn/82_items_(04-28-18)/nobackground/select' #筛选出来的图片保存路径
 xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/haarcascade_frontalface_default.xml'
 ```
+
+# usage method of extra edge from model images(model_outline_extract.py)
