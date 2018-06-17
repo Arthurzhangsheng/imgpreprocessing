@@ -30,3 +30,8 @@ xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/h
 ```
 
 # usage method of extra edge from model images(model_outline_extract.py)
+
+# usage method of center_crop_resize.py)
+功能:批量把图裁剪成正方形(以宽和高中较小的为准),然后resize到256x256  
+方法:修改`read_dir`和`save_dir`的路径,然后运行
+
