@@ -6,11 +6,12 @@ import os
 ├── test
    └── video.mp4          
 '''
-
-root_dir = r"D:\seagate2\DEEPFAKES\test"
-rate = 0.2 #裁剪帧率
+#------------------需要修改的部分-------------
+root_dir = r"D:\seagate2\DEEPFAKES\test"#视频所在的目录
+rate = 25 #裁剪帧率,不建议修改,因为合成时默认采用25帧的合成频率
 frame_format = "png" #jpg体积小,png速度快
 extract_sound = True #是否提取音频
+#---------------以上是可以修改的部分-----------
 
 pic_out_dir = root_dir + "/" +"frames"
 if not os.path.isdir(pic_out_dir):
