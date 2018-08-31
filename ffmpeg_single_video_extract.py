@@ -1,7 +1,11 @@
 #encoding = utf-8
 import subprocess
 import os
-
+'''
+文件目录结构如下所示
+├── test
+   └── video.mp4          
+'''
 
 root_dir = r"D:\seagate2\DEEPFAKES\test"
 rate = 25 #裁剪帧率
