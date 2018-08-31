@@ -8,7 +8,9 @@ import os
    ├── video.mp4
    └── video.aac          
 '''
+#------------------需要修改的部分-------------
 frames_dir = r"D:\seagate2\DEEPFAKES\test\frames"
+#---------------以上是可以修改的部分-----------
 
 vid_dir = os.path.split(frames_dir)[0] #去掉frames一级
 merge_dir = os.path.join(vid_dir,"labmerge")#labmerge文件夹和frames并列
