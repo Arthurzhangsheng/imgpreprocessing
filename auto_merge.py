@@ -9,7 +9,7 @@ import os
    └── video.aac          
 '''
 #------------------需要修改的部分-------------
-frames_dir = r"D:\seagate2\DEEPFAKES\test\frames"
+frames_dir = r"E:\seagate2\test\frames"
 merge_rate = 25 #合成速率,请与裁剪速度相匹配
 #---------------以上是可以修改的部分-----------
 
@@ -39,7 +39,7 @@ frame_full_name = os.path.join(merge_dir,frame_name)#构建merge图完整路径�
 
 #散图合成
 temp_out = os.path.join(merge_dir,"out.mp4")
-subprocess.call(["ffmpeg", "-r", merge_rate, '-i',frame_full_name, "-c:v", "libx264", "-vf", "fps=25,format=yuv420p",temp_out])
+subprocess.call(["ffmpeg", "-r", str(merge_rate), '-i',frame_full_name, "-c:v", "libx264", "-vf", "fps=25,format=yuv420p",temp_out])
 
 #声音合成
 sound_dir = os.path.join(vid_dir,shortname+".aac")
