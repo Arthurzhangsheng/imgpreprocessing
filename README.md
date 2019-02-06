@@ -33,3 +33,6 @@ xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/h
 功能:批量把图裁剪成正方形(以宽和高中较小的为准),然后resize到256x256  
 方法:修改`read_dir`和`save_dir`的路径,然后运行
 
+# pngread.py
+功能：往png图中插入与读取隐藏文本信息
+方法：修改`src_png`和`dst_png`的路径，然后运行
