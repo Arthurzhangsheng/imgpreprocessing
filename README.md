@@ -36,3 +36,7 @@ xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/h
 # pngread.py
 功能：往png图中插入与读取隐藏文本信息  
 方法：修改`src_png`和`dst_png`的路径，然后运行
+
+#img_resize.ipynb
+功能：批量缩放图片
+方法：修改`read_path`和`save_path`，以及cv2.resize函数中的尺寸
