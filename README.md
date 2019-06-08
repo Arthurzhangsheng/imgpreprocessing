@@ -1,9 +1,9 @@
 # imgpreprocessing
-resize img with padding into 256*256 jpg
+各种用过的图片处理python程序
 # requirement
-* cv2
-* jupyter notebook
-* python 3.5
+* opencv-python
+* .ipynb结尾的需要用jupyter notebook打开
+* python 3.6
 
 ### usage method of resize img into 256*256(image preprocessing.ipynb)
 
