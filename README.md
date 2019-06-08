@@ -5,7 +5,7 @@ resize img with padding into 256*256 jpg
 * jupyter notebook
 * python 3.5
 
-# usage method of resize img into 256*256(image preprocessing.ipynb)
+### usage method of resize img into 256*256(image preprocessing.ipynb)
 
 first, rename all the img
 
@@ -16,7 +16,7 @@ then modify the following code in `image preprocessing.ipynb`
 read_dir = 'H:\\render\\'  #图片读取路径
 save_dir = 'H:\\sketch2render\\render_resized\\' #图片储存路径
 ```
-# usage method of select model img(filter.py)
+### usage method of select model img(filter.py)
 
 First, find the 'haarcascade_frontalface_default.xml' in your opencv folder.
 then modify the following code in 'filter.py'
@@ -27,16 +27,20 @@ save_dir = 'C:/Users/Administrator/Desktop/fashion_deisgn/82_items_(04-28-18)/no
 xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/haarcascade_frontalface_default.xml'
 ```
 
-# usage method of extra edge from model images(model_outline_extract.py)
+### usage method of extra edge from model images(model_outline_extract.py)
 
-# usage method of center_crop_resize.py)
+### usage method of center_crop_resize.py)
 功能:批量把图裁剪成正方形(以宽和高中较小的为准),然后resize到256x256  
 方法:修改`read_dir`和`save_dir`的路径,然后运行
 
-# pngread.py
+### pngread.py
 功能：往png图中插入与读取隐藏文本信息  
 方法：修改`src_png`和`dst_png`的路径，然后运行
 
-#img_resize.ipynb
+###img_resize.ipynb
 功能：批量缩放图片
 方法：修改`read_path`和`save_path`，以及cv2.resize函数中的尺寸
+
+###jpg2png.py
+功能：批量把jpg转png，同时可以进行裁剪
+方法：修改`jpg_folder`为jpg文件夹目录，修改`png_folder`为png保存目录。如还需要裁剪，设置`RESIZE`为`True`，并设置裁剪大小`target_size`和插值方法`interpolation`
