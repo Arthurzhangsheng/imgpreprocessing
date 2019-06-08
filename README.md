@@ -37,10 +37,10 @@ xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/h
 功能：往png图中插入与读取隐藏文本信息  
 方法：修改`src_png`和`dst_png`的路径，然后运行
 
-###img_resize.ipynb
+### img_resize.ipynb
 功能：批量缩放图片
 方法：修改`read_path`和`save_path`，以及cv2.resize函数中的尺寸
 
-###jpg2png.py
+### jpg2png.py
 功能：批量把jpg转png，同时可以进行裁剪
 方法：修改`jpg_folder`为jpg文件夹目录，修改`png_folder`为png保存目录。如还需要裁剪，设置`RESIZE`为`True`，并设置裁剪大小`target_size`和插值方法`interpolation`
