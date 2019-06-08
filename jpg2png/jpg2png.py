@@ -8,9 +8,9 @@ from tqdm import tqdm
 '''
 
 #待处理图片文件夹
-jpg_folder = r"F:\zs\DeepFaceLabCUDA-0219-final\workspace\AV\guchuanyizhi\1024aligned"
+jpg_folder = r"F:\zs\DeepFaceLabCUDA-0219-final\workspace\AV\texie\1024aligned"
 #处理后保存的文件夹
-png_folder =r"F:\zs\DeepFaceLabCUDA-0219-final\workspace\AV\guchuanyizhi\512png" 
+png_folder =r"F:\zs\DeepFaceLabCUDA-0219-final\workspace\AV\texie\512png" 
 #是否裁剪
 RESIZE = True
 #缩小后的尺寸
@@ -23,10 +23,13 @@ if not os.path.exists(png_folder):
     os.makedirs(png_folder)
 
 for name in tqdm(glob.glob(f'{jpg_folder}/*.jpg'), ncols=10):  
-    img = cv2.imread(name)
+    img = cv2.imdecode(np.fromfile(name,dtype=np.uint8),-1) #这种读取图片方式支持中文路径
+    
     if RESIZE:
         img = cv2.resize(img, target_size, interpolation= interpolation)
     basename = os.path.basename(name).split(".")[0]#获取带后缀的基本文件名后，分割字符串，得到无后缀名字
     
-    cv2.imwrite(f'{png_folder}/{basename}.png',img)
+    cv2.imencode('.png', img)[1].tofile(f'{png_folder}/{basename}.png') #这种保存图片方式支持中文路径
+
+    
 
