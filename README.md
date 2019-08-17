@@ -38,3 +38,7 @@ xmlfile_dir = 'C:/Anaconda3/pkgs/opencv3-3.1.0-py35_0/Library/etc/haarcascades/h
 ### jpg2png.py
 功能：批量把jpg转png，同时可以进行裁剪
 方法：修改`jpg_folder`为jpg文件夹目录，修改`png_folder`为png保存目录。如还需要裁剪，设置`RESIZE`为`True`，并设置裁剪大小`target_size`和插值方法`interpolation`
+
+### 提取画面中指定大小的人脸.ipynb
+功能：批量提取大尺寸图中的人脸，自带尺寸过滤功能
+方法：修改`folder_path`为图片所在目录，运行后会在改目录下生成一个`face`文件夹，保存提取得到的人脸
